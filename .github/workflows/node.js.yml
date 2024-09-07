@@ -11,6 +11,7 @@ jobs:
   check_branch_rules:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4
     - name: Check branch rules
       run: |
         BASE_BRANCH="${{ github.base_ref }}"
